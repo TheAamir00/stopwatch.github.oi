@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop watch</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container p{
+            font-size:40px;
+        }
+        .container p span{
+            font-size:100px;
+        }
+        
+        .btns{
+            margin-left:110px;
+        }
+        .btns button{
+            width: 100px;
+            height: 50px;
+            margin-left:10px;
+            font-size:25px;
+            text-transform: capitalize;
+            border:1px solid transparent;
+            background: rgb(189, 31, 189);
+            color: white;
+        }
+        .btns button:hover{
+            background: rgb(71, 17, 71);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <p><span id="houre">00</span>Hr<span id="minute">00</span>Min<span id="second">00</span>Sec<span id="count">00</span></p>
+       <div class="btns">
+        <button id="start">start</button>
+        <button id="stop">stop</button>
+        <button id="reset">reset</button>
+       </div>
+    </div>
+<script src="./js/app.js"></script>
+</body>
+</html>
